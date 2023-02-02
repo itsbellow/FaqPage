@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
-const Topo = ({ titulo }) => {
-
+export const Topo = ({ titulo, search, setSearch }) => {
   return (
     <div className="container-fluid">
       <div className="row">
@@ -29,6 +28,8 @@ const Topo = ({ titulo }) => {
               type="search"
               placeholder="Pesquisar"
               aria-label="Search"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
             />
           </form>
         </div>
@@ -36,5 +37,3 @@ const Topo = ({ titulo }) => {
     </div>
   );
 };
-
-export default Topo;
