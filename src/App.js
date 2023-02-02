@@ -15,6 +15,11 @@ function App() {
             </svg> <strong>FAQ STARK</strong></h4>
           <h6 className="ml-3">{título}</h6>
         </div>
+        <div class="col-5 m-auto">
+          <form class="form-inline">
+            <input class="form-control w-50 m-auto" type="search" placeholder="Pesquisar" aria-label="Search"/>
+          </form>
+        </div>
       </div>
     </div>
     )
