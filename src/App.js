@@ -1,4 +1,7 @@
+import React from "react";
 import { useState } from "react";
+
+import { Topo } from "./components/Topo";
 
 const menu = [
   {
@@ -30,44 +33,6 @@ const menu = [
     submenus: [],
   },
 ];
-
-const Topo = ({ titulo, search, setSearch }) => {
-  return (
-    <div className="container-fluid">
-      <div className="row">
-        <div className="col-7">
-          <h4 className="mt-3">
-            <svg
-              className="ml-3 bi bi-chat-right-text"
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              viewBox="0 0 16 16"
-            >
-              <path d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1H2zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z" />
-              <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
-            </svg>{" "}
-            <strong>FAQ STARK</strong>
-          </h4>
-          <h6 className="ml-3">{titulo}</h6>
-        </div>
-        <div className="col-5 m-auto">
-          <form className="form-inline">
-            <input
-              className="form-control w-50 m-auto"
-              type="search"
-              placeholder="Pesquisar"
-              aria-label="Search"
-              value={search}
-              onChange={(e) => setSearch(e.target.value)}
-            />
-          </form>
-        </div>
-      </div>
-    </div>
-  );
-};
 
 function App() {
   const título = "Perguntas e Respotas Frequentes";
@@ -124,7 +89,7 @@ function App() {
                       {item.submenus.map((submenu, indexM) => (
                         <div key={indexM} className="accordion-body">
                           <a
-                            href="#"
+                            href="s"
                             onClick={() =>
                               setUrlDoVideoInicial(
                                 "https://www.youtube.com/embed/vKunxVcLv9g"
