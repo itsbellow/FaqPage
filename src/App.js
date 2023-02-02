@@ -45,7 +45,7 @@ function App() {
               </h2>
               <div id="flush-collapseOne" className="accordion-collapse collapse" aria-labelledby="flush-headingOne"
                 data-bs-parent="#accordionFlushExample">
-                <div className="accordion-body"><a href="empty#" onClick={()=>setUrlDoVideoInicial("https://www.youtube.com/embed/vKunxVcLv9g")}>Overview da Página Início</a></div>
+                <div className="accordion-body"><div className="btn" onClick={()=>setUrlDoVideoInicial("https://www.youtube.com/embed/vKunxVcLv9g")}>Overview da Página Início</div></div>
               </div>
             </div>
 
@@ -58,7 +58,7 @@ function App() {
               </h2>
               <div id="flush-collapseTwo" className="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
                 data-bs-parent="#accordionFlushExample">
-                <div className="accordion-body"><a href="empty" onClick={()=>setUrlDoVideoInicial("https://www.youtube.com/embed/7ImJmtoq9X4")}>Overview da Página Combinações</a></div>
+                <div className="accordion-body"><div className="btn" onClick={()=>setUrlDoVideoInicial("https://www.youtube.com/embed/7ImJmtoq9X4")}>Overview da Página Combinações</div></div>
               </div>
             </div>
 
@@ -71,7 +71,7 @@ function App() {
               </h2>
               <div id="flush-collapseThree" className="accordion-collapse collapse" aria-labelledby="flush-headingThree"
                 data-bs-parent="#accordionFlushExample">
-                <div className="accordion-body"><a href="empty" onClick={()=>setUrlDoVideoInicial("https://www.youtube.com/embed/8ssx41HC_sE")}>Overview da Página Originações</a></div>
+                <div className="accordion-body"><div className="btn" onClick={()=>setUrlDoVideoInicial("https://www.youtube.com/embed/8ssx41HC_sE")}>Overview da Página Originações</div></div>
               </div>
             </div>
 
@@ -84,7 +84,7 @@ function App() {
               </h2>
               <div id="flush-collapseFour" className="accordion-collapse collapse" aria-labelledby="flush-headingFour"
                 data-bs-parent="#accordionFlushExample">
-                <div className="accordion-body"><a href="empty" onClick={()=>setUrlDoVideoInicial("https://www.youtube.com/embed/flaimScsHuc")}>Overview da Página Clientes</a></div>
+                <div className="accordion-body"><div className="btn" onClick={()=>setUrlDoVideoInicial("https://www.youtube.com/embed/flaimScsHuc")}>Overview da Página Clientes</div></div>
               </div>
             </div>
 
@@ -97,7 +97,7 @@ function App() {
               </h2>
               <div id="flush-collapseFive" className="accordion-collapse collapse" aria-labelledby="flush-headingFive"
                 data-bs-parent="#accordionFlushExample">
-                <div className="accordion-body"><a href="empty" onClick={()=>setUrlDoVideoInicial("https://www.youtube.com/embed/GQW-li16PD8")}>Overview da Página Investidores</a></div>
+                <div className="accordion-body"><div className="btn" onClick={()=>setUrlDoVideoInicial("https://www.youtube.com/embed/GQW-li16PD8")}>Overview da Página Investidores</div></div>
               </div>
             </div>
 
@@ -110,7 +110,7 @@ function App() {
               </h2>
               <div id="flush-collapseSix" className="accordion-collapse collapse" aria-labelledby="flush-headingSix"
                 data-bs-parent="#accordionFlushExample">
-                <div className="accordion-body"><a href="empty" onClick={()=>setUrlDoVideoInicial("https://www.youtube.com/embed/qU2d9kZMIr4")}>Overview da Página Agentes</a></div>
+                <div className="accordion-body"><div className="btn" onClick={()=>setUrlDoVideoInicial("https://www.youtube.com/embed/qU2d9kZMIr4")}>Overview da Página Agentes</div></div>
               </div>
             </div>
 
@@ -123,7 +123,7 @@ function App() {
               </h2>
               <div id="flush-collapseSeven" className="accordion-collapse collapse" aria-labelledby="flush-headingSeven"
                 data-bs-parent="#accordionFlushExample">
-                <div className="accordion-body"><a href="empty" onClick={()=>setUrlDoVideoInicial("https://www.youtube.com/embed/PIer4oDDeRU")}>Overview da Página Ferramentas</a></div>
+                <div className="accordion-body"><div className="btn" onClick={()=>setUrlDoVideoInicial("https://www.youtube.com/embed/PIer4oDDeRU")}>Overview da Página Ferramentas</div></div>
               </div>
             </div>
           </div>
