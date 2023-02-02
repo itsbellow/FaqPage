@@ -3,31 +3,31 @@ import { useState } from "react";
 const menu = [
   {
     title: "Início",
-    submenus: ["Botao 1", "Botao 2", "Botao 3"],
+    submenus: ["Overview da Página Início"],
   },
   {
     title: "Combinações",
-    submenus: ["Botao 4", "Botao 5", "Botao 6"],
+    submenus: ["Overview da Página Combinações"],
   },
   {
     title: "Originações",
-    submenus: [],
+    submenus: ["Overview da Página Originações"],
   },
   {
     title: "Clientes",
-    submenus: [],
+    submenus: ["Overview da Página Clientes"],
   },
   {
     title: "Investidores",
-    submenus: [],
+    submenus: ["Overview da Página Investidores"],
   },
   {
     title: "Agentes",
-    submenus: [],
+    submenus: ["Overview da Página Agentes"],
   },
   {
     title: "Ferramentas",
-    submenus: [],
+    submenus: ["Overview da Página Ferramentas"],
   },
 ];
 
@@ -70,7 +70,7 @@ const Topo = ({ titulo, search, setSearch }) => {
 };
 
 function App() {
-  const título = "Perguntas e Respotas Frequentes";
+  const titulo = "Perguntas e Respotas Frequentes";
 
   const [search, setSearch] = useState("");
 
@@ -80,7 +80,7 @@ function App() {
 
   return (
     <div>
-      <Topo título={título} search={search} setSearch={setSearch} />
+      <Topo título={titulo} search={search} setSearch={setSearch} />
       <hr />
 
       <div className="container-fluid">
