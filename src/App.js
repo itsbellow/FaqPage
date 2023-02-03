@@ -19,14 +19,6 @@ const Topo=({titulo, search, setSearch})=>{
   )
 }
 
-const Video=()=>{
-  return(
-      <div className="col-9">
-      <iframe width="1080" height="550" src={UrlDoVideoInicial} title="Vídeo Inicial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </div>
-  )
-}
-
 function App() {
 
   const titulo='Perguntas e Respotas Frequentes'
@@ -151,6 +143,14 @@ function App() {
                 <div className="accordion-body"><div className="btn btn-light" onClick={()=>setUrlDoVideoInicial("https://www.youtube.com/embed/PIer4oDDeRU")}>Overview da Página Ferramentas</div></div>
               </div>
             </div>
+    )
+  }
+
+  const Video=()=>{
+    return(
+        <div className="col-9">
+        <iframe width="1080" height="550" src={UrlDoVideoInicial} title="Vídeo Inicial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
     )
   }
 
