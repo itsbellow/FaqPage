@@ -1,5 +1,24 @@
 import { useState } from "react";
 
+const Topo=({titulo, search, setSearch})=>{
+  return(
+  <div className="container-fluid">
+    <div className="row">
+      <div className="col-7">
+        <h4 className="mt-3 ml-3 d-flex align-items-center d-flex gap-2"><i class="material-symbols-outlined">quiz</i><strong>FAQ STARK</strong></h4>
+        <h6 className="ml-3">{titulo}</h6>
+      </div>
+      <div class="col-5 m-auto">
+        <form class="form-inline">
+          <input class="form-control w-50 m-auto" type="search" placeholder="Pesquisar" value={search} onChange={(e) => setSearch(e.target.value)} aria-label="Search"/>
+        </form>
+        
+      </div>
+    </div>
+  </div>
+  )
+}
+
 function App() {
 
   const titulo='Perguntas e Respotas Frequentes'
@@ -8,26 +27,7 @@ function App() {
 
   const [search, setSearch] = useState("")
 
-  const Topo=()=>{
-    return(
-    <div className="container-fluid">
-      <div className="row">
-        <div className="col-7">
-          <h4 className="mt-3 ml-3 d-flex align-items-center d-flex gap-2"><i class="material-symbols-outlined">quiz</i><strong>FAQ STARK</strong></h4>
-          <h6 className="ml-3">{titulo}</h6>
-        </div>
-        <div class="col-5 m-auto">
-          <form class="form-inline">
-            <input class="form-control w-50 m-auto" type="search" placeholder="Pesquisar" aria-label="Search"/>
-          </form>
-          
-        </div>
-      </div>
-    </div>
-    )
-  }
-
-  const Inicio=()=>{
+  const Início=()=>{
     return(
             <div className="accordion-item">
               <h2 className="accordion-header" id="flush-headingOne">
@@ -157,23 +157,23 @@ function App() {
   return (
 
     <div>
-      <Topo></Topo>
+      <Topo titulo={titulo} search={search} setSearch={setSearch}/>
     <hr/>
 
     <div className="container-fluid">
       <div className="row">
         <div className="col-3">
           <div className="ml-3 border accordion accordion-flush rounded shadow-lg p-3 mb-5 bg-white rounded" id="accordionFlushExample">
-            <Inicio/>
-            <Combinações/>
-            <Originações/>
-            <Clientes/>
-            <Investidores/>
-            <Agentes/>
-            <Ferramentas/>
+            {"Início".toLowerCase().includes(search.toLowerCase()) && <Início/>}
+            {"Combinações".toLowerCase().includes(search.toLowerCase()) && <Combinações/>}
+            {"Originações".toLowerCase().includes(search.toLowerCase()) && <Originações/>}
+            {"Clientes".toLowerCase().includes(search.toLowerCase()) && <Clientes/>}
+            {"Investidores".toLowerCase().includes(search.toLowerCase()) && <Investidores/>}
+            {"Agentes".toLowerCase().includes(search.toLowerCase()) && <Agentes/>}
+            {"Ferramentas".toLowerCase().includes(search.toLowerCase()) && <Ferramentas/>}
           </div>
         </div>
-        <Video/>
+        <Video UrlDoVideoInicial={UrlDoVideoInicial}/>
       </div>
     </div>
     </div>
